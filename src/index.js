@@ -2,6 +2,12 @@ import YandexGeocoder from './YandexGeocoder'
 import GoogleMapsTimezone from './GoogleMapsTimezone'
 
 export default class {
+
+    /**
+     * Timezone class
+     * @constructor
+     * @param{string} apiKey - Google Maps Timezone Api key.
+     */
     constructor(apiKey) {
         this.geocoder = new YandexGeocoder()
         this.timezone = new GoogleMapsTimezone(apiKey)
