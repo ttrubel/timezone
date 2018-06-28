@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --exit --require babel-core/register test/"
+    "test": "node node_modules/mocha/bin/mocha --exit --require babel-core/register test/"
   },
   "keywords": [],
   "author": "",
