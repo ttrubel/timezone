@@ -16,7 +16,7 @@ describe("Timezone", function () {
     it("Atyrau", async () => {
         const timezone = new Timezone(process.env.API_KEY)
 
-        const result = await timezone.timezoneByCity("Atyrau")
+        const result = await timezone.timezoneByCity("**-*/^%^#%^")
 
         if (result !== 'Asia/Oral') {
             throw new Error()

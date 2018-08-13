@@ -12,6 +12,8 @@ export default class GoogleMapsTimezone {
 
         if (response.status === 'OK') {
             return response.timeZoneId
+        } else {
+            throw response
         }
     }
 }

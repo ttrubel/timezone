@@ -2,7 +2,7 @@ import get from "./get";
 
 export default class YandexGeocoder {
     async cityToCoord(city) {
-        const { response } = await get(`https://geocode-maps.yandex.ru/1.x/?geocode=${city}&format=json&results=1`)
+        const { response } = await get(`https://geocode-maps.yandex.ru/1.x/?geocode=${encodeURIComponent(city)}&format=json&results=1`)
         const { GeoObjectCollection } = response
         const { metaDataProperty } = GeoObjectCollection
         const { GeocoderResponseMetaData } = metaDataProperty
